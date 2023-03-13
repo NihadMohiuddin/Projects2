@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EcommerceTest]">
+  <test thread-count="5" name="Register,Login(failed)">
+    <classes>
+      <class name="Ecommerce.Testcases.EcommerceTest">
+        <methods>
+          <include name="LaunchApp"/>
+          <include name="CheckEcommerceTest"/>
+        </methods>
+      </class> <!-- Ecommerce.Testcases.EcommerceTest -->
+    </classes>
+  </test> <!-- Register,Login(failed) -->
+</suite> <!-- Failed suite [EcommerceTest] -->

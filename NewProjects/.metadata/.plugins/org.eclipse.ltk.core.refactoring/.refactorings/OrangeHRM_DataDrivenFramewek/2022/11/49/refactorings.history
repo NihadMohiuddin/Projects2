@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;chromedriver.exe&apos; to &apos;EtihadAirways_POM&apos;&#x0D;&#x0A;- Original project: &apos;OrangeHRM_DataDrivenFramewek&apos;&#x0D;&#x0A;- Destination element: &apos;EtihadAirways_POM&apos;&#x0D;&#x0A;- Original element: &apos;chromedriver.exe&apos;" description="Copy file" destination="=EtihadAirways_POM" element1="chromedriver.exe" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1669717775558" units="0" version="1.0"/>
+</session>

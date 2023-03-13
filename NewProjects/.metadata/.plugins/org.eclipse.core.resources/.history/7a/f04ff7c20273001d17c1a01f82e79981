@@ -1,0 +1,208 @@
+package AsianPaints.Libraries;
+
+import static org.testng.Assert.expectThrows;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import AsianPaints.Utils.AppUtils;
+
+import org.openqa.selenium.support.FindBy;
+
+
+public class Shopping extends AppUtils {
+//create 1.object repositorires 2. methods 3.associating intielements
+//download dependeies of page refactory
+	@FindBy(xpath = "//div[1]/ul[1]/li[5]/a[2]/span[1]")
+	WebElement shop_element;
+	
+	@FindBy (xpath = "//*[@id=\"SHOP\"]/div[2]/div/div/div[1]/div/div/a/span")
+	WebElement WallStickrs_element;
+	
+	
+	
+	
+	@FindBy(xpath = "//*[@id=\"onetrust-accept-btn-handler\"]")
+	WebElement Acceptallcookies_element;
+	
+	
+	
+	@FindBy(xpath = "//*[@id=\"thin-banner-info\"]/ul/li[1]/div[2]/a")
+	WebElement AddtoCart_element;
+	
+	@FindBy(id = "cartPinCode")
+	WebElement Pincodebox_element;
+	
+	@FindBy(xpath = "//div[@class=\"ctaComp baseBtn\"]/button[@class=\"ctaText\"]")
+	WebElement PincodeSubmitbtn_element;
+	
+	
+	@FindBy(xpath = "//a[@class='ctaText w-100 active']")
+	WebElement Checkoutbtn_element;
+	
+	@FindBy(xpath = "//div[@class='cart-items-dropdowb position-relative js-main-cart-items-wrapper']")
+	WebElement Cartsymbol_element;
+	
+	
+	
+	@FindBy(xpath = "//*[@id=\"loginMobile\"]")
+	WebElement mobiletxtbox_element;
+	
+	@FindBy(xpath = "//*[@id=\"loginModal\"]/div/div/div[1]/a/span")
+	WebElement wrongbtn;
+	
+	
+	@FindBy(xpath = "//button[@class=\"ctaText modal__variant-login--submit\"]")
+	WebElement submitbtn_element;
+	
+	
+	@FindBy(id = "registerOtp")
+	WebElement OTPsentMsg_element;
+	
+	@FindBy(xpath = "//*[@id=\"registerModal\"]/div/div/div[1]/a/span")
+	WebElement wrongbtn_at_Otp;
+	
+	
+	
+	
+	
+	Actions act=new Actions(driver);
+	
+	
+	public void GenerateOTP(String mobileno, String pincode) throws InterruptedException 
+	
+	
+	{
+		act.moveToElement(shop_element).perform();
+        WallStickrs_element.click();	
+		
+		 //clicks on accept all cokies pop up to avoid clickintercpted exceptions
+		Thread.sleep(2000);
+	  //in 2nd iteration cookies lemnt wil not be present so
+		
+		
+	      try     
+	       {
+	    	  Acceptallcookies_element.isDisplayed();
+			  Acceptallcookies_element.click();
+		  
+	       } 
+		
+	      catch (Exception e) 
+		   {
+			System.out.println("coockies not found");
+		   }
+		
+		     AddtoCart_element.click();
+		
+		     try
+			 {
+        	
+        	   Pincodebox_element.isDisplayed();
+			   Pincodebox_element.sendKeys(pincode);
+			   PincodeSubmitbtn_element.click();  //after clicking item goes into cart
+		     } 
+	   
+          catch (Exception e) 
+		   {
+			
+	   		
+		   }
+		    
+		     
+		     Cartsymbol_element.click();//clicks on cart
+			 Checkoutbtn_element.click();
+		
+		
+         
+			
+		
+			//clicks on add to cart
+			
+			  
+			
+			  //explicit wait cause of excetpion not interctbaleexception
+			  WebDriverWait wait=new WebDriverWait(driver, 10);
+			  wait.until(ExpectedConditions.elementToBeClickable(mobiletxtbox_element)).click();;
+			  mobiletxtbox_element.sendKeys(mobileno);
+			  submitbtn_element.click();
+		
+		
+		
+	}
+  
+	  
+	
+	
+	
+	  public boolean isOTPSent() 
+	{	  
+		
+     
+	  if (OTPsentMsg_element.isDisplayed()) 
+	     
+	     {
+		  System.out.println(OTPsentMsg_element.getText() + "Text of OTP");
+          return true;
+	     } 
+	  
+	  else 
+	     {
+		   return false;
+	     }
+	  
+	
+	     OTPsentMsg_element.click();
+	  
+	}
+	  
+	  
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+}
+	  
+	  
+	  
+	  
+	  
+	
+
+	
+	
+
+
+
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

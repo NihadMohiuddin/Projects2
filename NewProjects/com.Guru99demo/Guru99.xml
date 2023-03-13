@@ -1,0 +1,66 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name ="demoGuru99">
+	
+	<test name ="CheckLoginTest">
+		<parameter name="browsername" value="chrome"/>
+		
+		<classes>
+			
+			<class name="com.Guru99demo.TestCases.LoginTest"></class>
+			
+		</classes>
+		
+		
+		
+	</test>
+	
+	
+	
+	
+	
+	<test name ="CheckInvalidLoginTest">
+
+			<parameter name="browsername" value="chrome"/>
+		<classes>
+			
+			<class name="com.Guru99demo.TestCases.InvalidLoginTest"></class>
+		
+		</classes>
+		
+		
+	</test>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</suite>

@@ -1,0 +1,53 @@
+package AsianPaints.Utils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtils {
+
+	public static FileInputStream fi;
+	public static FileOutputStream fo;
+	public static Workbook wb;
+	public static  Sheet  sht;
+	
+	
+	
+	public static int getRowcount(String filepath, String sheetname) throws IOException
+	{
+		   fi=new FileInputStream(filepath);
+           wb=  new XSSFWorkbook(fi);
+         Sheet sht=  wb.getSheet(sheetname);
+           int totalrows=ht.getLastRowNum();
+           return totalrows;
+		   
+		
+	}
+	
+	
+	public static void  getColumncount(String filepath,String sheetname, ) 
+	{
+		fi=new FileInputStream(filepath);
+		wb=new XSSFWorkbook(fi);
+		Sheet shwb.getSheet(sheetname);
+		
+		
+		
+		
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

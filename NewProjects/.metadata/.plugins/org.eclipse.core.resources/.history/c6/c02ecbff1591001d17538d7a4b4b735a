@@ -1,0 +1,119 @@
+package com.Guru99demo.Pageobjects;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.Guru99demo.TestCases.BaseClass;
+import com.Guru99demo.Utils.ReadConfig;
+
+public class LoginPage extends BaseClass{
+
+	ReadConfig rdConf=new ReadConfig();
+	
+	
+	public LoginPage() {
+	
+		PageFactory.initElements(driver, this);
+		
+		
+	}
+	
+	
+	
+	
+	//Object repository
+	@FindBy(name="uid")
+	WebElement id;
+	
+	@FindBy(name="password")
+	WebElement password;
+	
+	
+	@FindBy(name="btnLogin")
+	WebElement Loginbtn;
+	
+	@FindBy(linkText="Log out")
+	WebElement logut;
+	/*
+	@FindBy(name="uid")
+	WebElement id;
+	
+	
+	*/
+	
+	
+	
+	public void SetId(String username) throws IOException
+	{
+		BaseClass.Waithelper(id);
+		id.sendKeys(username);
+
+	}
+	
+	public void SetPass(String pass) throws IOException
+	{
+		BaseClass.Waithelper(password);
+		password.sendKeys(pass);
+
+	}
+	
+	
+	public void ClickLoginbtn()
+	{
+		BaseClass.Waithelper(Loginbtn);
+		Loginbtn.click();;
+
+	}
+	
+	
+	
+	
+	public void Logout()
+	{
+		BaseClass.Waithelper(logut);
+		logut.click();;
+       driver.switchTo().alert().accept();
+	}
+	
+	public boolean isLoginsucc() 
+	{
+	
+      return  ( driver.getTitle().equals("Guru99 Bank Manager HomePage"));
+	}
+	
+	public boolean isErorrAlertDisplayed()
+	{
+		
+		try 
+		{
+			driver.switchTo().alert().accept();
+			Thread.sleep(2000);
+			return true;
+		} 
+		
+		catch (Exception e)
+		{
+			return false;
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

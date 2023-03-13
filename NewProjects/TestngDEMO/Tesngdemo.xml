@@ -1,0 +1,15 @@
+
+<suite name="loginsuite">
+
+    <test name="Loginvalid" >
+
+      <paramter  name="userID" value="Md.nihadm@gmail.com"/> 
+      <paramter name="password" value="allahu786"/>
+
+        <classes>
+              <class name="Libraries.Login">    </class>
+       </classes>
+
+  </test>
+
+</suite>

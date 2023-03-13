@@ -1,0 +1,15 @@
+<suite name="OrangeHRM POM Test Suite">
+
+	<test name="Admin Login TestCase">
+		<classes>
+			<class name="orangehrm.testcases.AdminLoginTest"></class>
+		</classes>
+	</test>
+	
+	<test name="Employee TestCase">
+		<classes>
+			<class name="orangehrm.testcases.EmployeeRegTest"></class>
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [loginsuite]">
+  <test thread-count="5" name="Loginvalid(failed)">
+    <classes>
+      <class name="Libraries.Login">
+        <methods>
+          <include name="launchApp"/>
+          <include name="login"/>
+          <include name="Closeapp"/>
+        </methods>
+      </class> <!-- Libraries.Login -->
+    </classes>
+  </test> <!-- Loginvalid(failed) -->
+</suite> <!-- Failed suite [loginsuite] -->

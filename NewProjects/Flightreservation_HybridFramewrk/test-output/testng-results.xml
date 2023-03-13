@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-26T22:19:39 IST" name="Login" finished-at="2022-12-26T22:19:49 IST" duration-ms="10478">
+    <groups>
+    </groups>
+    <test started-at="2022-12-26T22:19:39 IST" name="Checking User Login With Valid Inputs" finished-at="2022-12-26T22:19:42 IST" duration-ms="3391">
+      <class name="FlightReservation.Testcases.CheckUserLoginWithVALIDInputs">
+        <test-method signature="LoginwithValidInputs(java.lang.String,java.lang.String)[pri:0, instance:FlightReservation.Testcases.CheckUserLoginWithVALIDInputs@a9cd3b1]" started-at="2022-12-26T22:19:39 IST" name="LoginwithValidInputs" finished-at="2022-12-26T22:19:42 IST" duration-ms="3347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[md.nihadm@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[allahu786]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginwithValidInputs -->
+      </class> <!-- FlightReservation.Testcases.CheckUserLoginWithVALIDInputs -->
+    </test> <!-- Checking User Login With Valid Inputs -->
+    <test started-at="2022-12-26T22:19:42 IST" name="Checking User Login With INValid Inputs" finished-at="2022-12-26T22:19:49 IST" duration-ms="7032">
+      <class name="FlightReservation.Testcases.CheckUserLoginWithINVALIDinputs">
+        <test-method is-config="true" signature="LaunchApp()[pri:0, instance:FlightReservation.Testcases.CheckUserLoginWithINVALIDinputs@1ea9f6af]" started-at="2022-12-26T22:19:34 IST" name="LaunchApp" finished-at="2022-12-26T22:19:39 IST" duration-ms="4894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method signature="LoginwithINValidInputs()[pri:0, instance:FlightReservation.Testcases.CheckUserLoginWithINVALIDinputs@1ea9f6af]" started-at="2022-12-26T22:19:42 IST" name="LoginwithINValidInputs" finished-at="2022-12-26T22:19:49 IST" duration-ms="7028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginwithINValidInputs -->
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:FlightReservation.Testcases.CheckUserLoginWithINVALIDinputs@1ea9f6af]" started-at="2022-12-26T22:19:49 IST" name="CloseApp" finished-at="2022-12-26T22:19:49 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApp -->
+      </class> <!-- FlightReservation.Testcases.CheckUserLoginWithINVALIDinputs -->
+    </test> <!-- Checking User Login With INValid Inputs -->
+  </suite> <!-- Login -->
+</testng-results>

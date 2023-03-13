@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Ya Rahman\eclipse-workspace\NewProjects\com.Guru99demo"/>
+			<item value="C:\Users\Ya Rahman\eclipse-workspace\NewProjects\CCBR_Framework"/>
+			<item value="C:\Users\Ya Rahman\eclipse-workspace\NewProjects\AsianPaints_POM"/>
+			<item value="C:\Users\Ya Rahman\eclipse-workspace\NewProjects\Hybridframe_BySir\src\orangehrm\testcases\OrangeHRMTest.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.TCS"/>
+			<item value="com.Infosys"/>
+			<item value="com.Flipkart"/>
+			<item value="com.Hp"/>
+			<item value="com.Amazon"/>
+			<item value="com.spGlobal"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Stormoverseas"/>
+			<item value="Myntra"/>
+			<item value="com.Guru99demo"/>
+			<item value="HRM_Bysir"/>
+			<item value="HRM_HybridFrmewrk"/>
+			<item value="Json_Project"/>
+			<item value="DataproviderInTestNG"/>
+			<item value="HRM_CCBR"/>
+			<item value="CCBR_Framework"/>
+			<item value="JsonProject"/>
+			<item value="HRM_CCBR_bySIR"/>
+			<item value="HRM_HybridFramewrk"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

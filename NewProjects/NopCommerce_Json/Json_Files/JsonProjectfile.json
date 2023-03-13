@@ -1,0 +1,42 @@
+{
+
+
+	"First name": "Mohammad Asiya",
+	"Lastname": "Banu",
+	"Email": "md.nihad19935@gmail.com",
+	"Confirmemail": "md.nihad19935@gmail.com",
+	"Username": "Nousheen7866",
+	"Password": "Allahu@786",
+	"Confirm password": "Allahu@786",
+
+
+
+	"Invalid Login": [
+	
+	    {
+			"InvalUsrnme": "hdfuoigdfiu",
+			"InvalPass": "ohrogf8%##%4"
+		},
+		{
+			"InvalUsrnme": "adfadadfigdadfu",
+			"InvalPass": "fgtrgykogfliu4"
+		},
+		{
+			"InvalUsrnme": "657nghfuoigdfiu",
+			"InvalPass": "5767hrklrogf74"
+		},
+		{
+			"InvalUsrnme": "opuogfuoigdfiu",
+			"InvalPass": "scogf894"
+		},
+		{
+			"InvalUsrnme": "dnjhjuoigdfiu",
+			"InvalPass": "oklogf894"
+		}
+
+
+	]
+
+
+
+}

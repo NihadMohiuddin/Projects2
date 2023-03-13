@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Admin Login With Valid Data(failed)">
+    <parameter name="AdminID" value="Admin  "/>
+    <parameter name="AdminPass" value="Qedge123!@#"/>
+    <classes>
+      <class name="company.TestCases.AdminLoginwithValidDatatestcase">
+        <methods>
+          <include name="LaunchApp"/>
+          <include name="CloseApp"/>
+          <include name="checkadminlogin"/>
+        </methods>
+      </class> <!-- company.TestCases.AdminLoginwithValidDatatestcase -->
+    </classes>
+  </test> <!-- Admin Login With Valid Data(failed) -->
+  <test thread-count="5" name="Admin Login With InValid Data(failed)">
+    <parameter name="AdminWrnPass" value="1234"/>
+    <parameter name="AdminWrnID" value="abc"/>
+    <classes>
+      <class name="company.TestCases.AdminLoginwithINValidDatatestcase">
+        <methods>
+          <include name="LaunchApp"/>
+          <include name="CloseApp"/>
+          <include name="adminlogn_invaldata"/>
+        </methods>
+      </class> <!-- company.TestCases.AdminLoginwithINValidDatatestcase -->
+    </classes>
+  </test> <!-- Admin Login With InValid Data(failed) -->
+  <test thread-count="5" name="Employee Registeration Test(failed)">
+    <parameter name="Firstname" value="Sharukhan"/>
+    <parameter name="Lasttname" value="Khanna"/>
+    <classes>
+      <class name="company.TestCases.EmployeRegisterationTestCase">
+        <methods>
+          <include name="employeregistrion"/>
+          <include name="LaunchApp"/>
+          <include name="CloseApp"/>
+          <include name="AdminModuleLogin"/>
+          <include name="AdminModuleLogout"/>
+        </methods>
+      </class> <!-- company.TestCases.EmployeRegisterationTestCase -->
+    </classes>
+  </test> <!-- Employee Registeration Test(failed) -->
+  <test thread-count="5" name="User registeration test(failed)">
+    <parameter name="passwrd" value="Allahu@786"/>
+    <parameter name="Employename" value="Mohammaddemo"/>
+    <parameter name="usrname" value="Nihaddd"/>
+    <classes>
+      <class name="company.TestCases.UserRegistertionTest">
+        <methods>
+          <include name="LaunchApp"/>
+          <include name="CloseApp"/>
+          <include name="user"/>
+          <include name="AdminModuleLogin"/>
+          <include name="AdminModuleLogout"/>
+        </methods>
+      </class> <!-- company.TestCases.UserRegistertionTest -->
+    </classes>
+  </test> <!-- User registeration test(failed) -->
+</suite> <!-- Failed suite [OrangeHRM] -->

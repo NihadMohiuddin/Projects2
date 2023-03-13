@@ -1,0 +1,32 @@
+package com.Stormoverseas.TestCases;
+
+import org.testng.annotations.Test;
+
+import com.Stormoverseas.PageObjects.Homepage;
+
+public class StudyinAbroadTest  extends BaseClass{
+
+	
+	
+	
+	
+	@Test
+	public void studyaboradtest()
+	{
+		
+		homepage=new Homepage(driver);	
+		homepage.PickCountryStudyAbroad("France");
+				
+		
+		
+		
+		
+
+	}
+	
+	
+	
+	
+	
+	
+}

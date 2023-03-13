@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [demoGuru99]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CheckLoginTest(failed)">
+    <parameter name="brwsername" value="chrome"/>
+    <classes>
+      <class name="com.Guru99demo.TestCases.LoginTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.Guru99demo.TestCases.LoginTest -->
+    </classes>
+  </test> <!-- CheckLoginTest(failed) -->
+</suite> <!-- Failed suite [demoGuru99] -->

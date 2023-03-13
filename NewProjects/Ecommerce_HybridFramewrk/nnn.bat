@@ -1,0 +1,1 @@
+C:\Users\Ya Rahman\eclipse-workspace\NewProjects\Ecommerce_HybridFramewrk java -cp c:\Users\Ya Rahman\eclipse-workspace\NewProjects\Ecommerce_HybridFramewrk\jars\*;c:\Users\Ya Rahman\eclipse-workspace\NewProjects\Ecommerce_HybridFramewrk\bin  org.testng.TestNG C:\Users\Ya Rahman\eclipse-workspace\NewProjects\Ecommerce_HybridFramewrk\Ecommerce.xml

@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OrangeHRM Test Suite">
+
+	<test name="Admin Login TestCase with valid inputs">
+	<parameter name="uid" value="Admin">        </parameter>
+	<parameter name="pwd" value="Qedge123!@#">  </parameter>	
+		<classes>
+				<class name="orangehrm.testcases.AdminLoginTestwithValidData"></class>
+		</classes>	
+	</test>
+
+
+
+	<test name="Admin Login TestCase with invalid inputs">
+	<parameter name="uidin" value="abc"></parameter>
+	<parameter name="pwdin" value="xyz"></parameter>
+	<classes>
+		<class name="orangehrm.testcases.AdminLoginTestwithInvalidData"></class>
+	</classes>		
+	</test>
+	
+	<!-- 
+	<test name = "New Employee Registration TestCase">
+	<parameter name="fname" value="Ranjan"></parameter>
+	<parameter name="lname" value="Demo"></parameter>
+		<classes>
+			<class name="orangehrm.testcases.EmployeeRegTest"></class>
+		</classes>
+	</test>
+	
+	<test name="New User Registration TestCase">
+	<parameter name="role" value="ESS"></parameter>
+	<parameter name="empname" value="Ranjan Demo"></parameter>
+	<parameter name="uname" value="Ranjan123"></parameter>
+	<parameter name="pword" value="Qedge123!@#"></parameter>
+		<classes>
+			<class name="orangehrm.testcases.UserRegTest"></class>
+		</classes>
+	</test>
+	
+	<test name="Employee Login TestCase">
+	<parameter name="empuid" value="Ranjan123"></parameter>
+	<parameter name="emppwd" value="Qedge123!@#"></parameter>
+		<classes>
+			<class name="orangehrm.testcases.EmployeeLoginTest"></class>
+		</classes>
+	</test>
+-->
+</suite>

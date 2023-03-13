@@ -1,0 +1,146 @@
+package AsianPaints.Utils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtils {
+
+	public static FileInputStream fi;
+	public static FileOutputStream fo;
+	public static Workbook wb;
+	public static  Sheet  sht;
+	public static Cell cell;
+	public static Row row;
+	public static CellStyle style;
+	
+	
+	
+	
+	public static int getRowcount(String filepath, String sheetname) throws IOException
+	{
+		   fi=new FileInputStream(filepath);
+           wb=  new XSSFWorkbook(fi);
+           Sheet sht=  wb.getSheet(sheetname);
+           int totalrows=sht.getLastRowNum();
+        	wb.close();
+    	    return totalrows;
+		   
+		
+	}
+	
+	
+	public static short  getColumncount(String filepath,String sheetname, int Rowno) throws IOException 
+	{
+		fi=new FileInputStream(filepath);
+		wb=new XSSFWorkbook(fi);
+		Sheet sht=wb.getSheet(sheetname);
+		short totalcolumcount=sht.getRow(Rowno).getLastCellNum();
+		wb.close();
+		return totalcolumcount;
+	
+	
+	}
+	
+	public static String getStringcelldata(String filepath, String sheetname, int Rowno, int Cellno) throws IOException 
+	{
+		fi=new FileInputStream(filepath);
+		wb=new XSSFWorkbook(fi);
+		Sheet sht=wb.getSheet(sheetname);
+	    String stringvalue=	sht.getRow(Rowno).getCell(Cellno).getStringCellValue();
+		fi.close();
+	    wb.close();
+	    return stringvalue;
+		
+	}
+	
+	
+	public static double getNumericcelldata(String filepath, String sheetname, int Rowno, int Cellno) throws IOException 
+	{
+		fi=new FileInputStream(filepath);
+		wb=new XSSFWorkbook(fi);
+		Sheet sht=wb.getSheet(sheetname);
+	    double Numericvalue=	sht.getRow(Rowno).getCell(Cellno).getNumericCellValue();
+		fi.close();
+	    wb.close();
+	    return Numericvalue;
+		
+	}
+	
+	
+	
+	public static boolean getBooleancelldata(String filepath, String sheetname, int Rowno, int Cellno) throws IOException 
+	{
+		fi=new FileInputStream(filepath);
+		wb=new XSSFWorkbook(fi);
+		Sheet sht=wb.getSheet(sheetname);
+	    boolean booleanvalue=	sht.getRow(Rowno).getCell(Cellno).getBooleanCellValue();
+		fi.close();
+	    wb.close();
+	    return booleanvalue;
+		
+	}
+	
+	
+	
+	public static void setStringcelldata(String filepath, String Sheetname, int Rowno, int Cellno, String Stringdata) throws IOException 
+	{
+		fi=new FileInputStream(filepath);
+		wb=new XSSFWorkbook(fi);
+		wb.getSheet(Sheetname).getRow(Rowno).getCell(Cellno).setCellValue(Stringdata);
+		fo=new FileOutputStream(filepath);
+		fi.close();
+		wb.close();
+		fo.close();
+			
+	}
+	
+	
+	public static void setGreencolor(String filepath, String Sheetname, int Rowno, int Cellno) throws IOException 
+	{
+		fi=new FileInputStream(filepath);
+		wb=new XSSFWorkbook(fi);
+		Cell=wb.getSheet(Sheetname).getRow(Rowno).getCell(Cellno);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

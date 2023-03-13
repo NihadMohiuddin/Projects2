@@ -1,0 +1,90 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="AdminLogin">
+
+
+<!-- 
+  <test name="Admin Login With Valid Data">
+    <parameter name="UserID"       value="Admin" >    </parameter>
+    <parameter name="Adminpasswd"  value="Qedge123!@#">    </parameter>
+      <classes>
+         <class name ="HRM.Testcases.AdminLoginTestWithValidInputs">
+         </class>
+      </classes>
+   </test>
+
+
+  <test name="Admin Login with Invalid Data">
+    
+    <parameter name="UserID" value="Adsfsdgmin"></parameter>
+    <parameter name="AdminPasswd" value="615ds56g5sf"></parameter>
+    <classes>
+
+   <class name="HRM.Testcases.AdminLoginTestWithINValidInputs"></class>
+
+    </classes>
+    
+ </test>
+
+
+-->
+
+
+<test name="Adding Employee">
+<parameter name="UserID"  value="Admin"></parameter>
+<parameter name="Passwrd" value="Qedge123!@#"></parameter>
+
+<parameter name="employename" value="Sharukh khan"></parameter>
+<parameter name="username" value="SRK"></parameter>
+<parameter name="EmployePasswrd" value="Allahu@786"></parameter>
+   <classes>
+<class name="HRM.Testcases.AddEmployeeTestcase"></class>
+  </classes>
+
+
+
+
+
+</test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</suite>

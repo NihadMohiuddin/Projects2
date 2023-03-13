@@ -1,0 +1,147 @@
+package AsianPaints.Libraries;
+
+import java.time.Duration;
+
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import AsianPaints.Utils.AppUtils;
+
+import org.openqa.selenium.support.FindBy;
+
+
+public class Shopping extends AppUtils {
+//create 1.object repositorires 2. methods 3.associating intielements
+//download dependeies of page refactory
+	@FindBy(xpath = "//div[1]/ul[1]/li[5]/a[2]/span[1]")
+	WebElement shop_element;
+	
+	@FindBy (xpath = "//*[@id=\"SHOP\"]/div[2]/div/div/div[1]/div/div/a/span")
+	WebElement WallStickrs_element;
+	
+	@FindBy(xpath = "//*[@id=\"onetrust-accept-btn-handler\"]")
+	WebElement Acceptallcookies_element;
+	
+	@FindBy(xpath = "//*[@id=\"thin-banner-info\"]/ul/li[1]/div[2]/a")
+	WebElement AddtoCart_element;
+	
+	@FindBy(id = "cartPinCode")
+	WebElement Pincodebox_element;
+	
+	@FindBy(xpath = "//div[@class=\"ctaComp baseBtn\"]/button[@class=\"ctaText\"]")
+	WebElement Submitbtn_element;
+	
+	
+	@FindBy(xpath = "//a[@class='ctaText w-100 active']")
+	WebElement Checkoutbtn_element;
+	
+	@FindBy(xpath = "//div[@class='cart-items-dropdowb position-relative js-main-cart-items-wrapper']")
+	WebElement Cartsymbol_element;
+	
+	@FindBy(id = "loginMobile")
+	WebElement mobiletxtbox_element;
+	
+	
+	@FindBy(xpath = "//button[@class=\"ctaText modal__variant-login--submit\"]")
+	WebElement submitbtn_element;
+	
+	@FindBy(xpath = "//*[@id=\"validate-register\"]/legend")
+	WebElement OTPsentMsg_element;
+	
+	
+	
+	Actions act=new Actions(driver);
+	
+	public void Buyingaproduct(String Mobileno) throws InterruptedException 
+	{
+		
+        act.moveToElement(shop_element).perform();
+        WallStickrs_element.click();	
+		String TitleofWindow=driver.getTitle();
+		
+		if (TitleofWindow.toLowerCase().contains("wall-stickers")) 
+		{
+			System.out.println("Wall stickers window opened");
+		
+		}
+		else 
+		{
+			System.out.println("Wall stickers window NOT opened");
+		}
+		
+   //clicks on accept all cokies pop up to avoid clickintercpted exceptions
+		Thread.sleep(2000);
+	    Acceptallcookies_element.click();	
+   //clicks on add to cart
+	  AddtoCart_element.click();
+
+	  Pincodebox_element.sendKeys("534275");
+	  Submitbtn_element.click();
+	  Cartsymbol_element.click();
+	  Checkoutbtn_element.click();
+	  mobiletxtbox_element.sendKeys(Mobileno);
+	  submitbtn_element.click();
+	  
+	  System.out.println(OTPsentMsg_element.getText() + "text");
+	}
+	  
+	  
+	  public boolean isOTPSent() 
+	{
+          
+	  if (OTPsentMsg_element.getText().equalsIgnoreCase("Please enter the 5 digit OTP sent via SMS to verify your mobile number!")) 
+	     {
+		      return true;
+	     } 
+	   else 
+	     {
+		   return false;
+	     }
+	  
+	
+	}
+	  
+	  
+	
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	}
+
+	
+	
+
+
+
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

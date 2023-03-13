@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Login">
+    
+    <test  name="Checking User Login With Valid Inputs">
+    <parameter name="EmailID"  value="md.nihadm@gmail.com"></parameter>
+     <parameter name="Password"  value="allahu786"></parameter>  
+       <classes>
+
+         <class name="FlightReservation.Testcases.CheckUserLoginWithVALIDInputs"></class>
+
+       </classes>
+    </test>
+
+
+
+
+  <test  name="Checking User Login With INValid Inputs">
+    <parameter name="EmailIDW"  value="md.nidgghadm@gmail.com"></parameter>
+     <parameter name="PasswordW"  value="alfvdlahu786"></parameter>  
+      
+       <classes>
+
+         <class name="FlightReservation.Testcases.CheckUserLoginWithINVALIDinputs"></class>
+
+       </classes>
+    </test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</suite>
