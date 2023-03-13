@@ -22,7 +22,7 @@ public class EcommerceTest extends AppUtils {
 	   String Mobileno;
 	   String password;
 	   String Confrompassword;
-	 // yfyufyu
+	
 	   String invalidFname;
 	   String invalidLsname;
 	   String invalidEmail;
